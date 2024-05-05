@@ -1,0 +1,12 @@
+baseURL = 'https://blog.depoze.xyz/'
+languageCode = 'en-us'
+theme = "logseq-hugo-bearblog"
+
+title = "CuSO4_Deposit's Electrolytic Infodump"
+author = "CuSO4_Deposit"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
