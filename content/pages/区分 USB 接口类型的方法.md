@@ -8,20 +8,20 @@ lastMod: 2024-09-20
 ## Env / Dependency
 
 
-Arch Linux, x86_64
+  + Arch Linux, x86_64
 
-core/usbutils
+  + core/usbutils
 
 ## 区分 USB 设备是否支持 USB 3.0
 
 
-~~接口是蓝色的一般就是 USB 3.0~~
+  + ~~接口是蓝色的一般就是 USB 3.0~~
 
 
-USB 3.0 有五个额外的插针 [Image](https://en.wikipedia.org/wiki/USB_3.0#/media/File:Connector_USB_3_IMGP6024_wp.jpg)
+  + USB 3.0 有五个额外的插针 [Image](https://en.wikipedia.org/wiki/USB_3.0#/media/File:Connector_USB_3_IMGP6024_wp.jpg)
 
 
-利用 lsusb：
+  + 利用 lsusb：
 
 ```shell-session
 $ lsusb                        
@@ -45,7 +45,7 @@ Device Descriptor:
 ## 区分设备上的 2.0/3.0 USB 接口
 
 
-利用上面的例子：
+  + 利用上面的例子：
 
 ```shell-session
 $ lsusb                        
@@ -59,14 +59,14 @@ Bus 002 Device 004: ID 1058:266e Western Digital Technologies, Inc. Elements SE 
 2.0 root hub 和 3.0 root hub 有不同的总线编号。插入一个 USB 设备，然后查看此设备在哪一个对应的总线编号下面即可确定对应插入的接口的类型。
 
 
-Detailed Explanation from GPT-4-turbo:
+  + Detailed Explanation from GPT-4-turbo:
 
 
 
-To determine which USB ports on your device are USB 2.0 and which are USB 3.0 based on the output from `lsusb`, you can look at the Bus IDs and their associated root hub device IDs. Here's how you can interpret the information:
+    + To determine which USB ports on your device are USB 2.0 and which are USB 3.0 based on the output from `lsusb`, you can look at the Bus IDs and their associated root hub device IDs. Here's how you can interpret the information:
 
 
-### Understanding the `lsusb` Output
+    + ### Understanding the `lsusb` Output
 
 1. **Bus and Device IDs**: Each USB device connected to your system is listed with a Bus ID and a Device ID. For example, `Bus 001 Device 001` indicates the first device on the first USB bus.
 
@@ -75,24 +75,24 @@ To determine which USB ports on your device are USB 2.0 and which are USB 3.0 ba
 3. **Root Hubs**:
    
 
-**USB 2.0 Root Hubs**: Typically have a device ID that ends with `0002`. In your output:
+      + **USB 2.0 Root Hubs**: Typically have a device ID that ends with `0002`. In your output:
 
-`Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub` indicates that Bus 001 is a USB 2.0 bus.
+        + `Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub` indicates that Bus 001 is a USB 2.0 bus.
 
-**USB 3.0 Root Hubs**: Typically have a device ID that ends with `0003`. In your output:
+      + **USB 3.0 Root Hubs**: Typically have a device ID that ends with `0003`. In your output:
 
-`Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub` indicates that Bus 002 is a USB 3.0 bus.
-
-
-### Determining USB Port Versions
+        + `Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub` indicates that Bus 002 is a USB 3.0 bus.
 
 
-**USB 2.0 Ports** are linked to `Bus 001` in your case. Any device listed under this bus, like your webcam and Bluetooth interface, is connected via a USB 2.0 port.
-
-**USB 3.0 Ports** are linked to `Bus 002` in your case. The Western Digital SSD connected here is utilizing a USB 3.0 port.
+    + ### Determining USB Port Versions
 
 
-### Physical Identification
+      + **USB 2.0 Ports** are linked to `Bus 001` in your case. Any device listed under this bus, like your webcam and Bluetooth interface, is connected via a USB 2.0 port.
+
+      + **USB 3.0 Ports** are linked to `Bus 002` in your case. The Western Digital SSD connected here is utilizing a USB 3.0 port.
+
+
+    + ### Physical Identification
 
 To physically identify which ports on your laptop or PC correspond to these bus numbers:
 

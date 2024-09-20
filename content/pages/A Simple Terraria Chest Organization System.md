@@ -21,11 +21,11 @@ Blocks 2
 
 Potions 3
 
-For battle 1
+  + For battle 1
 
-Not for battle 1
+  + Not for battle 1
 
-Fish used to craft potion 1
+  + Fish used to craft potion 1
 
 Statues (including gravemarkers) 2
 
@@ -47,13 +47,13 @@ Wood 1
 
 Weapons 11
 
-Melee 3
+  + Melee 3
 
-Ammo&Ranged 1 + Ranged 2
+  + Ammo&Ranged 1 + Ranged 2
 
-Magic 3
+  + Magic 3
 
-Summoner 2
+  + Summoner 2
 
 Food 1
 
@@ -99,11 +99,11 @@ With 3 rows of platforms, a possible organization may have 18 cols like:
 
 药水 3
 
-战斗使用 1
+  + 战斗使用 1
 
-非战斗使用 1
+  + 非战斗使用 1
 
-制作药水需要用的鱼 1
+  + 制作药水需要用的鱼 1
 
 雕像 (包含墓碑) 2
 
@@ -125,13 +125,13 @@ With 3 rows of platforms, a possible organization may have 18 cols like:
 
 武器 11
 
-战士 3
+  + 战士 3
 
-弹药&射手 1 + 射手 2
+  + 弹药&射手 1 + 射手 2
 
-法师 3
+  + 法师 3
 
-召唤师 2
+  + 召唤师 2
 
 食物 1
 

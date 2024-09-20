@@ -7,7 +7,7 @@ lastMod: 2024-09-20
 ---
 ## Attribute sets
 
-This is an example code, where `ex0` to `ex7` are evaluated to true.
+  + This is an example code, where `ex0` to `ex7` are evaluated to true.
 ```nix
 with import <nixpkgs> { };
 with lib;
@@ -30,7 +30,7 @@ in
 ```
 source: https://nixcloud.io/tour/?id=attrset/examples
 
-This is an example code, where `ex0` and `ex1` are evaluated to true.
+  + This is an example code, where `ex0` and `ex1` are evaluated to true.
 ```nix
 let
   list = [ { name = "foo"; value = 123; }
@@ -44,7 +44,7 @@ in
 ```
 source: https://nixcloud.io/tour/?id=attrset/examples2
 
-This is an example code, where `exBonus` is evaluated to true.
+  + This is an example code, where `exBonus` is evaluated to true.
 ```nix
 let
   attrSetBonus = {f = {add = (x: y: x + y);
@@ -58,7 +58,7 @@ rec {
 ```
 source: https://nixcloud.io/tour/?id=attrset/examples3
 
-Attrsets support mapping operations. See `nixpkgs.lib.mapAttrs`.
+  + Attrsets support mapping operations. See `nixpkgs.lib.mapAttrs`.
 ```nix
 with import <nixpkgs> { };
 with stdenv.lib;
@@ -73,7 +73,7 @@ source: https://nixcloud.io/tour/?id=mapAttrs
 
 ## Lists
 
-This is an example on basic functions on lists. `ex\d` are all evaluated to true.
+  + This is an example on basic functions on lists. `ex\d` are all evaluated to true.
 ```nix
 with import <nixpkgs> { };
 with stdenv.lib;
@@ -102,7 +102,7 @@ in
 ```
 source: https://nixcloud.io/tour/?id=lists/operations
 
-Lists support mapping operations. See `builtins.map`:
+  + Lists support mapping operations. See `builtins.map`:
 ```nix
 let
   numbers = [1 2 3 4];
@@ -114,7 +114,7 @@ in
 ```
 source: https://nixcloud.io/tour/?id=map
 
-Lists support fold. See `nixpkgs.lib.fold`.
+  + Lists support fold. See `nixpkgs.lib.fold`.
 `fold func init [x_1 x_2 ... x_n] == func x_1 (func x_2 ... (func x_n init))`
 `foldl func init [x_1 x_2 ... x_n] == func (... (func (func init x_1) x_2) ... x_n)`.
 ```nix
@@ -133,15 +133,15 @@ rec {
 }
 ```
 
-### Reimplementations using fold
+    + ### Reimplementations using fold
 
-Reverse List (`lib.reverseList`)
+      + Reverse List (`lib.reverseList`)
 ```nix
 reverseList = lib.fold (x: y: y ++ [ x ]) [];
 ```
 source: https://nixcloud.io/tour/?id=reimplementation/reverselist
 
-Map (`builtins.map`)
+      + Map (`builtins.map`)
 ```nix
 with import <nixpkgs> { };
 let
