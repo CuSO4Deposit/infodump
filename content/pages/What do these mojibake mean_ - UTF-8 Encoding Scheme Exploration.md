@@ -24,8 +24,6 @@ When @叉叉 first send me the video title (.... ø·ø ̈ùšù„ø© ... ø£
 
 
 
-
-
 What the IDE returns: "²»ÊÇÄڲ¿»òÍⲿÃüÁҲ²»ÊǿÉÔËÐеĳÌÐò
 »òÅú´¦ÀíÎļþ¡£"
 
@@ -119,8 +117,6 @@ When I thought I got something wrong, I find this new kind of mojibake has some 
 [http://stg-learn.sketchup.com/u-23497.php](http://stg-learn.sketchup.com/u-23497.php)
 [https://www.docin.com/p-2280050009.html](https://www.docin.com/p-2280050009.html)
 [https://xueshu.baidu.com/usercenter/paper/show?paperid=10668a70e990c9fd526b3e0382dfaf16](https://xueshu.baidu.com/usercenter/paper/show?paperid=10668a70e990c9fd526b3e0382dfaf16)
-
-
 
 
 
@@ -282,7 +278,7 @@ U+FFFF
 
 U+10000
 
-[[nb 2]](https://en.wikipedia.org/wiki/UTF-8#cite_note-16)U+10FFFF
+[nb 2](https://en.wikipedia.org/wiki/UTF-8#cite_note-16)U+10FFFF
 
 11110xxx
 
@@ -529,8 +525,6 @@ It's clear that loopcounter {{< logseq/mark >}} 100 split the last double-byte c
 
 
 
-
-
 The status bar shows that they are now decoded in different schemes(ANSI, UTF-8).
 
 Windows runs in UTF-8. The last character was cut up, which caused the notepad think it is ANSI(GBK, in China)-encoded. At the time I copy these words into clipboard, Windows automatically converts the encoding scheme of contents to UTF-8, keeping the characters unchanged. This process entirely damaged the original 0-1 code of the string.
@@ -539,8 +533,6 @@ A guessing
 
 To verify this guessing, I read the Arabic's code byte-by-byte, and it's first 2 Arabic bytes are: "11011000 10100010 11011001 10000101"(a.k.a. 0xD8A2 0xD985). And I find a GBK encoding chart:
 [对GBK的理解（内附全部字符编码列表）：扩充的2万汉字低字节的高位不等于1，而且还剩许多编码空间没有利用](https://www.cnblogs.com/findumars/p/4541421.html)(Already known that GBK is a 2-byte character encoding scheme), go find the 0xD8A2 and the 0xD985, corresponding to "丌" and "賲", this verifies my guessing.
-
-
 
 
 
