@@ -7,7 +7,7 @@ lastMod: 2024-10-11
 ---
 ## Options Explanation
 
-`expandtab`: a boolean value controls whether **the real input** is a tab character (\t) or the specified number of spaces.
+**expandtab**: a boolean value controls whether **the real input** is a tab character (\t) or the specified number of spaces.
 
 ```
                                  'expandtab' 'et' 'noexpandtab' 'noet'
@@ -19,9 +19,9 @@ lastMod: 2024-10-11
         on, use CTRL-V<Tab>.  See also :retab and ins-expandtab.       
 ```
 
-`tabstop`: number of spaces a tab **visually** counts for. Defaults to 8. It does not affect how many spaces/tabs will be inserted directly.
+**tabstop**: number of spaces a tab **visually** counts for. Defaults to 8. It does not affect how many spaces/tabs will be inserted directly.
 
-`shiftwidth`: number of columns to use when **indenting**, such as `>>`. When zero it falls back to `tabstop` value.
+**shiftwidth**: number of columns to use when **indenting**, such as `>>`. When zero it falls back to `tabstop` value.
 
 ```
                                                 'shiftwidth' 'sw'
@@ -33,12 +33,15 @@ lastMod: 2024-10-11
         function to get the effective shiftwidth value.
 ```
 
-`softtabstop`: a integet defaults to 0. It defined **how many columns moved** when <tab> is pressed or <BS>-ed. When `expandtab` is true, it always uses space, otherwise it uses a mix of spaces and tabs. A negative value makes it fall back to the value `shiftwidth`.
+**softtabstop**: a integet defaults to 0. It defined **how many columns moved** when \<tab\> is pressed or \<BS\>-ed. When `expandtab` is true, it always uses space, otherwise it uses a mix of spaces and tabs. A negative value makes it fall back to the value `shiftwidth`.
 
 For example:
-when `:set tabstop=4 softtabstop=8 noexpandtab`, pressing <tab> once will move you 8 columns right, inserting 2 tabs. When there are 14 spaces in the buffer, pressing <BS> will remove 6 (move you 6 columns left to the nearest tabstop), and next press will remove the 8 left.
-when `set tabstop=8 softtabstop=4 noexpandtab`, pressing <tab> once will move you 4 columns right, it does so by inserting 4 spaces. Pressing <tab> again will move you 4 columns right again, but the former 8 spaces is now replaced by one tab (\t). Now press <BS> once, you are moved 4 columns left, the tab is now removed (because tabstop=8) and there are 4 spaces left.
-when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disabled. Each time you press <tab>, you insert a tab and moves to the next tabstop.
+
+when `:set tabstop=4 softtabstop=8 noexpandtab`, pressing \<tab\> once will move you 8 columns right, inserting 2 tabs. When there are 14 spaces in the buffer, pressing \<BS\> will remove 6 (move you 6 columns left to the nearest tabstop), and next press will remove the 8 left.
+
+when `set tabstop=8 softtabstop=4 noexpandtab`, pressing \<tab\> once will move you 4 columns right, it does so by inserting 4 spaces. Pressing \<tab\> again will move you 4 columns right again, but the former 8 spaces is now replaced by one tab (\t). Now press \<BS\> once, you are moved 4 columns left, the tab is now removed (because tabstop=8) and there are 4 spaces left.
+
+when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disabled. Each time you press \<tab\>, you insert a tab and moves to the next tabstop.
 
 ```
                                         'softtabstop' 'sts'
@@ -61,7 +64,7 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
         to anything other than an empty string.
 ```
 
-`smarttab`: a boolean value controls whether a tab length is `shiftwidth` or `tabstop`/`softtabstop`.
+**smarttab**: a boolean value controls whether a tab length is `shiftwidth` or `tabstop`/`softtabstop`.
 
 ```
                                  'smarttab' 'sta' 'nosmarttab' 'nosta'
@@ -79,7 +82,7 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
         number of spaces is minimized by using <Tab>s.
 ```
 
-`autoindent`: boolean value, defaults on. When starting a newline, copy indent from current line.
+**autoindent**: boolean value, defaults on. When starting a newline, copy indent from current line.
 
 ```
                         'autoindent' 'ai' 'noautoindent' 'noai'
@@ -101,7 +104,7 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
         deleted indent; Vi puts the cursor somewhere in the deleted indent}.
 ```
 
-`smartindent`: boolean value controls the behavior when dealing with `{`, `}`, or cinwords. Defaults to off.
+**smartindent**: boolean value controls the behavior when dealing with `{`, `}`, or cinwords. Defaults to off.
 
 ```
                              'smartindent' 'si' 'nosmartindent' 'nosi'
