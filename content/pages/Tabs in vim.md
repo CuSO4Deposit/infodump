@@ -3,7 +3,7 @@ date: 2024-10-11
 title: Tabs in vim
 tags:
 categories:
-lastMod: 2024-10-11
+lastMod: 2024-11-05
 ---
 ## Options Explanation
 
@@ -20,6 +20,18 @@ lastMod: 2024-10-11
 ```
 
 **tabstop**: number of spaces a tab **visually** counts for. Defaults to 8. It does not affect how many spaces/tabs will be inserted directly.
+
+```
+                                                'tabstop' 'ts'
+'tabstop' 'ts'          number  (default 8)
+                        local to buffer
+        Number of spaces that a <Tab> in the file counts for.  Also see
+        the :retab command, and the 'softtabstop' option.
+
+        Note: Setting 'tabstop' to any other value than 8 can make your file
+        appear wrong in many places.
+        The value must be more than 0 and less than 10000.
+```
 
 **shiftwidth**: number of columns to use when **indenting**, such as `>>`. When zero it falls back to `tabstop` value.
 

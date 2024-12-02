@@ -3,7 +3,7 @@ date: 2023-01-22
 title: 为小米手环配置Zepp Life的开源替代
 tags:
 categories:
-lastMod: 2024-09-23
+lastMod: 2024-11-05
 ---
 Steps: [https://codeberg.org/Freeyourgadget/Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge)
 

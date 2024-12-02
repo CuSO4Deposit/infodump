@@ -3,7 +3,7 @@ date: 2023-05-20
 title: Terraria Text Color
 tags:
 categories:
-lastMod: 2024-09-20
+lastMod: 2024-11-05
 ---
 In terraria, announcement-box-syntax can be used to display text in different colors. This post records some color codes of my common use. They may not be accurate since they are obtained using the colorpicker.
 

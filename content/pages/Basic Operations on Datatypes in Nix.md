@@ -3,7 +3,7 @@ date: 2024-07-09
 title: Basic Operations on Datatypes in Nix
 tags:
 categories:
-lastMod: 2024-09-20
+lastMod: 2024-11-05
 ---
 ## Attribute sets
 

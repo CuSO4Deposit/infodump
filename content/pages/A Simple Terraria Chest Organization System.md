@@ -3,7 +3,7 @@ date: 2023-07-11
 title: A Simple Terraria Chest Organization System
 tags:
 categories:
-lastMod: 2024-09-20
+lastMod: 2024-11-05
 ---
 Read in [English](#en) | [简体中文](#zh-cn)
 

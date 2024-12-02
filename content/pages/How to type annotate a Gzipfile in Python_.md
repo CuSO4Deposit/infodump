@@ -3,7 +3,7 @@ date: 2024-10-05
 title: How to type annotate a Gzipfile in Python?
 tags:
 categories:
-lastMod: 2024-10-06
+lastMod: 2024-11-05
 ---
 Pyright complains when I use the following code to process gzip files:
 

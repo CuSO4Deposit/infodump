@@ -3,7 +3,7 @@ date: 2021-10-04
 title: Vim commands quickref
 tags:
 categories:
-lastMod: 2024-09-21
+lastMod: 2024-11-05
 ---
 ## Move cursor
 

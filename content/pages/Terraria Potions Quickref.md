@@ -3,7 +3,7 @@ date: 2023-08-28
 title: Terraria Potions Quickref
 tags:
 categories:
-lastMod: 2024-09-20
+lastMod: 2024-11-05
 ---
 ## For battle
 
