@@ -3,7 +3,7 @@ title: Latin Grammar
 tags:
 categories:
 date: 2024-12-02
-lastMod: 2024-12-02
+lastMod: 2024-12-03
 ---
 ## Word Order
 
@@ -41,6 +41,8 @@ Nouns, pronouns, and adjectives change their endings according to their function
 
 **Loc**ative: location. Usually used with the name of cities and a limited number of nouns. *domi* 'at home'.
 
+  + In linguistics, cases other than nom. and vol. are called **obl**ique case.
+
 ## Tense
 
   + 6 main tenses in indicative mood, 4 in subjunctive mood, 2 in imperative mood.
@@ -58,3 +60,9 @@ Participles have 3, while the infinitive has 2.
 **Future Perfect**: *fecero* 'I will have done'
 
 **Pluperfect**: *feceram* 'I had done'
+
+## Conjugation
+
+  + ### Consonant Conjugation (3)
+
+    + 
