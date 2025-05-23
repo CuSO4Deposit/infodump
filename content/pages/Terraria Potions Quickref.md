@@ -1,9 +1,10 @@
 ---
+tags:
+- Terraria
 date: 2023-08-28
 title: Terraria Potions Quickref
-tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-03-22
 ---
 ## For battle
 
@@ -43,4 +44,4 @@ lastMod: 2024-11-05
 | Obsidian Skin | -             | Fireblossom + Waterleaf | Obsidian          |
 | Wormhole      | Specular fish | Blinkroot               | -                 |
 
-#Terraria #Quickref
+#Terraria
