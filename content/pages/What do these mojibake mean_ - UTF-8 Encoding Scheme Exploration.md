@@ -4,9 +4,9 @@ title: What do these mojibake mean? - UTF-8 Encoding Scheme Exploration
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 This article may contain horrific and gory videos. Be careful when clicking on the URLs. If you have any discomfort when browsing, please stop and leave. / 本文可能含有恐怖、血腥性质的图片、视频。请谨慎进入文中的链接。如果您在浏览过程中产生任何不适，请停止浏览并离开。
-
+  
 ## Introduction
 
 We often meet mojibake, in games, web pages, or somewhere else. UTF-8 is the most widespread encoding scheme. These days my friends @叉叉 and @北嘲 find some weird videos on YouTube, with obscure titles and terrifying cover. We are curious about the origin of these creepy videos. This article is to record our exploration process.
@@ -15,20 +15,20 @@ Some Example Videos
 
 [.... ø·ø ̈ùšù„ø© ... ø£øoù†ùšø© ù„ù„ø£ø·ù ø§ù„ ... ù„ùšø ̈ùšø§](https://www.youtube.com/watch?v=6fAE1VxKbOQ)
 [.. آمراة تدعى أنها السيدة مريم العذراء بأنها متزوجة من المسيح](https://www.youtube.com/watch?v=Fxd_bUi3cog)
-
+  
 ## Exploration
-
+  
 #### Association with encoding
 
 When @叉叉 first send me the video title (.... ø·ø ̈ùšù„ø© ... ø£øoù†ùšø© ù„ù„ø£ø·ù ø§ù„ ... ù„ùšø ̈ùšø§), it reminds me of what my misconfigured C-language IDE returns me as console error info:
+  
 
-
-
+  
 What the IDE returns: "²»ÊÇÄڲ¿»òÍⲿÃüÁҲ²»ÊǿÉÔËÐеĳÌÐò
 »òÅú´¦ÀíÎļþ¡£"
 
 This is apparently a decoding error. Characters are all Latin Characters. Remind me of some schemes like ISO 8859-1. @叉叉 found that of these titles, some are mojibake and the other are Arabic. So I put my attention on Arabic Encoding.
-
+  
 #### Organize known information
 
 @北嘲 and @刺刺 provide the following conclusion: we have many videos, with similar, creepy contents. The titles are 2 kinds: mojibake and Arabic. But all the Arabic-titled videos nearly have the same title: ".. آمراة تدعى أنها السيدة مريم العذراء بأنها متزوجة من المسيح" which means "yes A woman who claimed to be the Virgin Mary married Jesus."
@@ -42,7 +42,7 @@ what @北嘲 found
 The content of the 0-1 string:
 
 001011100010000011011000101000101101100110000101110110001011000111011000101001111101100010101001001000001101100010101010110110001010111111011000101110011101100110001001001000001101100010100011110110011000011011011001100001111101100010100111001000001101100010100111110110011000010011011000101100111101100110001010110110001010111111011000101010010010000011011001100001011101100010110001110110011000101011011001100001010010000011011000101001111101100110000100110110001011100111011000101100001101100010110001110110001010011111011000101000010010000011011000101010001101100010100011110110011000011011011001100001111101100010100111001000001101100110000101110110001010101011011000101100101101100110001000110110001010110011011000101010010010000011011001100001011101100110000110001000001101100010100111110110011000010011011001100001011101100010110011110110011000101011011000101011010010000011011000
-
+  
 #### Directly converting - New Mojibake found
 
 A simple thought is to directly read these bits, and each 8 bit I output an ASCII character. This is the first version of this program.
@@ -117,15 +117,15 @@ When I thought I got something wrong, I find this new kind of mojibake has some 
 [http://stg-learn.sketchup.com/u-23497.php](http://stg-learn.sketchup.com/u-23497.php)
 [https://www.docin.com/p-2280050009.html](https://www.docin.com/p-2280050009.html)
 [https://xueshu.baidu.com/usercenter/paper/show?paperid=10668a70e990c9fd526b3e0382dfaf16](https://xueshu.baidu.com/usercenter/paper/show?paperid=10668a70e990c9fd526b3e0382dfaf16)
+  
 
+  
 
-
-
-
+  
 Screenshots
 
 That's to say, what I decode is not completely wrong. At least it has something to do with Arabic.
-
+  
 #### Dig Deeper - UTF-8 scheme
 
 As mentioned in the code comment, when debugging, I use a manual loop counter. By accident I find that, sometimes in the output file there is a complete Arabic sentence, not garmbled words:
@@ -522,9 +522,9 @@ When loopcounter is set to 100 or 101, these are what they ouput:
 10000100
 
 It's clear that loopcounter {{< logseq/mark >}} 100 split the last double-byte character. ("11011001 10000100" -> "11011001"), and loopcounter {{< / logseq/mark >}} 101 solves this problem. But this will only cause the last character's decoding error, why does the entire sentence falls into garbled words? The lower right corner of the Notepad draws my attention:
+  
 
-
-
+  
 The status bar shows that they are now decoded in different schemes(ANSI, UTF-8).
 
 Windows runs in UTF-8. The last character was cut up, which caused the notepad think it is ANSI(GBK, in China)-encoded. At the time I copy these words into clipboard, Windows automatically converts the encoding scheme of contents to UTF-8, keeping the characters unchanged. This process entirely damaged the original 0-1 code of the string.
@@ -533,15 +533,15 @@ A guessing
 
 To verify this guessing, I read the Arabic's code byte-by-byte, and it's first 2 Arabic bytes are: "11011000 10100010 11011001 10000101"(a.k.a. 0xD8A2 0xD985). And I find a GBK encoding chart:
 [对GBK的理解（内附全部字符编码列表）：扩充的2万汉字低字节的高位不等于1，而且还剩许多编码空间没有利用](https://www.cnblogs.com/findumars/p/4541421.html)(Already known that GBK is a 2-byte character encoding scheme), go find the 0xD8A2 and the 0xD985, corresponding to "丌" and "賲", this verifies my guessing.
+  
 
-
-
+  
 Knowing this, I can specify the loopcounter, not separating a character to 2 parts. Then I can get the complete original sentence:
 
 .. آمراة تدعى أنها السيدة مريم العذراء بأنها متزوجة من المسيح
 
 This Arabic sentence(decoded from an introduction of a video) and the Arabic titles we first found, are identical.
-
+  
 #### Other mojibake
 
 Knowing the process of decoding this kind of mojibake, it's then possible to decode the another:
@@ -626,9 +626,10 @@ Sadly, the output doesn't make any sense:
 .... Ã¸Â·Ã¸ ÌÃ¹Å¡Ã¹âÃ¸Â© ... Ã¸Â£Ã¸oÃ¹â Ã¹Å¡Ã¸
 
 After checking each character, it turns out the program works well. The reason may be the followings:
-
+  
 This mojibake isn't generated by this kind of decoding error, maybe just garbled words;
-
+  
 This is generated by decoding error, but the origin language isn't Latin(not using Windows-1252)
 
 To be continued...
+ 

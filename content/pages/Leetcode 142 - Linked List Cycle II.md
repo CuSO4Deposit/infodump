@@ -4,7 +4,7 @@ title: Leetcode 142 - Linked List Cycle II
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ## Problem
 
 Given the `head` of a linked list, return *the node where the cycle begins. If there is no cycle, return* `null`.
@@ -24,7 +24,7 @@ Example 2:
 **Input:** head = [1], pos = -1
 **Output:** no cycle
 **Explanation:** There is no cycle in the linked list.
-
+  
 ## My Solution
 
 I have explored this problem 2 yrs ago. [Link](/pages/单链表的含环和相交性质探究过程记录/)
@@ -56,15 +56,15 @@ L_s = L_f - L_s = nL_c.
 The 1st equal sign holds because L_f = 2L_s. The 2nd equal sign holds because `fp` just moves several more cycles than `sp` - they start from the same node and stops from the same node.
 
 Alg:
-
+  
 Use fast-and-slow pointers to traverse the linklist from `head`. Record the node where `fp` and `sp` meets as `s`. We also have L_f and L_s.
-
+  
 Use fast-and-slow pointers to traverse the linklist, starting from `s`. Record the distance `sp` goes, it should be L_c, since `fp` moves 1 step relative to `sp`. so we can solve n = \frac{L_s}{L_c}.
-
+  
 Let a pointer `p` starts from `head` and goes (n - 1)L_c steps. Since L_s = L_0 + L_{fs} = nL_c, distance between `p` and the node where the cycle begins is L_c - L_{fs}. Let a pointer `q` points to s. The distance between `q` and the node where the cycle begins is also L_c - L_{fs}.
-
+  
 Let `p` and `q` moves at the same speed of 1. The node where they meet should be where the cycle begins.
-
+  
 ## My Implementation (in C)
 
 ```C
@@ -118,5 +118,6 @@ struct ListNode *detectCycle(struct ListNode *head) {
   return p;
 }
 ```
-
+  
 #LeetCode #pointer #快慢指针
+ 

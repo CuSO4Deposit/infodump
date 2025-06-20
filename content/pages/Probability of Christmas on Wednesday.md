@@ -4,11 +4,11 @@ title: Probability of Christmas on Wednesday
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ## Original Problem
 
 Proof: In the system of the current Common Era, the probability of Christmas on Wed. is not 1/7.
-
+  
 ## What exactly the probability is
 
 In 400 years there are 303 non-leap years and 97 leap years. Total number of days:
@@ -16,7 +16,7 @@ In 400 years there are 303 non-leap years and 97 leap years. Total number of day
 $$T = 303\cdot 365 + 97\cdot 366\equiv 303 + 97\cdot 2\equiv 0\pmod 7.$$
 
 This means: If the Christmas is on Mon. in year x, then it would be on Mon. in year (x + 400). That's to say, there's a difference between a day of the week and another day of the week.
-
+  
 ### Solve in C
 
 ```C
@@ -151,7 +151,7 @@ S M T W T F S
 Hit any key to close this window...
 
 As the Jan. 1st is on Sat in 2000, we know it's Sat. in year 0 too. Then our chronological system loops as what the 7th result shows. X-mas falls on Wednesday 57 times in 400 years. $$P = \dfrac{57}{400}.$$
-
+  
 ### Solve in Wolfram Mathematica[ref] [试编程求圣诞节在星期三的具体概率？](https://www.zhihu.com/answer/397494528) [/ref]
 
 ```mathematica
@@ -163,5 +163,6 @@ result:
 ```
 {{Monday, 56}, {Tuesday, 58}, {Wednesday, 57}, {Thursday, 57}, {Saturday, 56}, {Sunday, 58}, {Friday, 58}}
 ```
-
+  
 #mathematica #NumberTheory
+ 

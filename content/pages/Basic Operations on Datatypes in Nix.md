@@ -4,9 +4,9 @@ title: Basic Operations on Datatypes in Nix
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ## Attribute sets
-
+  
   + This is an example code, where `ex0` to `ex7` are evaluated to true.
 ```nix
 with import <nixpkgs> { };
@@ -29,7 +29,7 @@ in
 }
 ```
 source: https://nixcloud.io/tour/?id=attrset/examples
-
+  
   + This is an example code, where `ex0` and `ex1` are evaluated to true.
 ```nix
 let
@@ -43,7 +43,7 @@ in
 }
 ```
 source: https://nixcloud.io/tour/?id=attrset/examples2
-
+  
   + This is an example code, where `exBonus` is evaluated to true.
 ```nix
 let
@@ -57,7 +57,7 @@ rec {
 }
 ```
 source: https://nixcloud.io/tour/?id=attrset/examples3
-
+  
   + Attrsets support mapping operations. See `nixpkgs.lib.mapAttrs`.
 ```nix
 with import <nixpkgs> { };
@@ -70,9 +70,9 @@ in
 }
 ```
 source: https://nixcloud.io/tour/?id=mapAttrs
-
+  
 ## Lists
-
+  
   + This is an example on basic functions on lists. `ex\d` are all evaluated to true.
 ```nix
 with import <nixpkgs> { };
@@ -101,7 +101,7 @@ in
 
 ```
 source: https://nixcloud.io/tour/?id=lists/operations
-
+  
   + Lists support mapping operations. See `builtins.map`:
 ```nix
 let
@@ -113,7 +113,7 @@ in
 }
 ```
 source: https://nixcloud.io/tour/?id=map
-
+  
   + Lists support fold. See `nixpkgs.lib.fold`.
 `fold func init [x_1 x_2 ... x_n] == func x_1 (func x_2 ... (func x_n init))`
 `foldl func init [x_1 x_2 ... x_n] == func (... (func (func init x_1) x_2) ... x_n)`.
@@ -132,15 +132,15 @@ rec {
   ex1 = mulB intList; #should be [ 2 4 6 8 ]
 }
 ```
-
+  
     + ### Reimplementations using fold
-
+  
       + Reverse List (`lib.reverseList`)
 ```nix
 reverseList = lib.fold (x: y: y ++ [ x ]) [];
 ```
 source: https://nixcloud.io/tour/?id=reimplementation/reverselist
-
+  
       + Map (`builtins.map`)
 ```nix
 with import <nixpkgs> { };
@@ -155,5 +155,6 @@ rec {
 }
 ```
 source: https://nixcloud.io/tour/?id=reimplementation/map
-
+  
 #Nix
+ 

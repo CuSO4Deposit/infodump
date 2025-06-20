@@ -4,9 +4,9 @@ title: Tabs in vim
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ## Options Explanation
-
+  
 **expandtab**: a boolean value controls whether **the real input** is a tab character (\t) or the specified number of spaces.
 
 ```
@@ -18,7 +18,7 @@ lastMod: 2024-11-05
         when 'autoindent' is on.  To insert a real tab when 'expandtab' is
         on, use CTRL-V<Tab>.  See also :retab and ins-expandtab.       
 ```
-
+  
 **tabstop**: number of spaces a tab **visually** counts for. Defaults to 8. It does not affect how many spaces/tabs will be inserted directly.
 
 ```
@@ -32,7 +32,7 @@ lastMod: 2024-11-05
         appear wrong in many places.
         The value must be more than 0 and less than 10000.
 ```
-
+  
 **shiftwidth**: number of columns to use when **indenting**, such as `>>`. When zero it falls back to `tabstop` value.
 
 ```
@@ -44,7 +44,7 @@ lastMod: 2024-11-05
         When zero the 'ts' value will be used.  Use the shiftwidth()
         function to get the effective shiftwidth value.
 ```
-
+  
 **softtabstop**: a integet defaults to 0. It defined **how many columns moved** when \<tab\> is pressed or \<BS\>-ed. When `expandtab` is true, it always uses space, otherwise it uses a mix of spaces and tabs. A negative value makes it fall back to the value `shiftwidth`.
 
 For example:
@@ -75,7 +75,7 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
         The value of 'softtabstop' will be ignored if 'varsofttabstop' is set
         to anything other than an empty string.
 ```
-
+  
 **smarttab**: a boolean value controls whether a tab length is `shiftwidth` or `tabstop`/`softtabstop`.
 
 ```
@@ -93,7 +93,7 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
         option.  Also see ins-expandtab.  When 'expandtab' is not set, the
         number of spaces is minimized by using <Tab>s.
 ```
-
+  
 **autoindent**: boolean value, defaults on. When starting a newline, copy indent from current line.
 
 ```
@@ -115,7 +115,7 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
         <Esc> or <CR>, the cursor position when moving up or down is after the
         deleted indent; Vi puts the cursor somewhere in the deleted indent}.
 ```
-
+  
 **smartindent**: boolean value controls the behavior when dealing with `{`, `}`, or cinwords. Defaults to off.
 
 ```
@@ -137,9 +137,9 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
         When using the ">>" command, lines starting with '#' are not shifted
         right.
 ```
-
+  
 ## Best practices
-
+  
 ```
         There are four main ways to use tabs in Vim:
         1. Always keep 'tabstop' at 8, set 'softtabstop' and 'shiftwidth' to 4
@@ -159,15 +159,15 @@ when `set tabstop=4 softtabstop=0 noexpandtab`, the softtabstop feature is disab
            though.  Otherwise aligned comments will be wrong when 'tabstop' is
            changed.
 ```
-
+  
 ## How to set individual tab options for different filetypes?
-
+  
 in vim, use [autocmd](https://vimdoc.sourceforge.net/htmldoc/autocmd.html).
 
 ```vim
 autocmd BufEnter *.py :setlocal tabstop=4 shiftwidth=4 expandtab
 ```
-
+  
 in neovim, use [ftplugin](https://neovim.io/doc/user/usr_41.html#ftplugin).
 
 ```lua
@@ -178,7 +178,7 @@ vim.bo.shiftwidth = 4
 vim.bo.expandtab = true
 vim.bo.softtabstop = 4
 ```
-
+  
 in nixvim, use `files` sub-modules. [ref](https://github.com/nix-community/nixvim/discussions/2066)
 
 ```nix
@@ -203,5 +203,6 @@ programs.nixvim = {
   };
 };
 ```
-
+  
 #Neovim #Nixvim #vim
+ 

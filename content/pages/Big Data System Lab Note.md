@@ -4,11 +4,11 @@ title: Big Data System Lab Note
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ### Set up Hadoop environment
 
 [Apache Hadoop 3.3.6 – Hadoop: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
-
+  
 ### set up java environment
 
 java version requirements:
@@ -41,7 +41,7 @@ openjdk version "1.8.0_382-382"
 OpenJDK Runtime Environment (build 1.8.0_382-382-b05)
 OpenJDK 64-Bit Server VM (build 25.382-b05, mixed mode)
 ```
-
+  
 ### requisite software
 
 `ssh` required, `pdsh` for better performance.
@@ -50,7 +50,7 @@ OpenJDK 64-Bit Server VM (build 25.382-b05, mixed mode)
 % sudo apt install ssh
 % sudo apt install pdsh
 ```
-
+  
 ### download hadoop
 
 (switch to a mirror if download is too slow)
@@ -60,7 +60,7 @@ OpenJDK 64-Bit Server VM (build 25.382-b05, mixed mode)
 % tar -xvf ./hadoop-3.3.6.tar.gz
 % sudo mv ./hadoop-3.3.6 /usr/local/bin/hadoop-3.3.6
 ```
-
+  
 ### prepare to start the Hadoop Cluster
 
 edit `hadoop-3.3.6/etc/hadoop/hadoop-env.sh`. Hadoop will try to execute`$JAVA_HOME/bin/java`.
@@ -89,7 +89,7 @@ OPTIONS is none or any of:
 ```
 
 **Execute `hadoop-env.sh` so that `$JAVA_HOME` is exported.**
-
+  
 ### Pseudo-Distributed Operation
 
 Use the following:
@@ -115,7 +115,7 @@ etc/hadoop/hdfs-site.xml:
   </property>
 </configuration>
 ```
-
+  
 ### set up passphraseless ssh
 
 ```
@@ -129,7 +129,7 @@ If you cannot ssh to localhost without a passphrase, execute the following comma
 % cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 % chmod 0600 ~/.ssh/authorized_keys
 ```
-
+  
 ### yarn on single note
 
 Format the filesystem
@@ -203,5 +203,6 @@ Make the HDFS dir required to execute MapRecuce jobs.
 ```
 % bin/hdfs dfs -mkdir -p /user/hadoop
 ```
-
+  
 #Hadoop #java
+ 

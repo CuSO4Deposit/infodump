@@ -4,13 +4,13 @@ tags:
 categories:
 date: 2024-12-02
 lastMod: 2024-12-03
----
+--- 
 ## Word Order
-
+  
   + Word order is relatively free because cases have enough expressiveness.
-
+  
 ## Gender & Number
-
+  
   + 3 genders, 2 numbers
 
 Pronouns, adjectives, participles, and the numbers 1 to 3 have to agree in gender and number with the noun they refer to:
@@ -20,9 +20,9 @@ Pronouns, adjectives, participles, and the numbers 1 to 3 have to agree in gende
 | masculine | **hic** est filius **meus** | **hi** sunt filii **mei** |
 | feminine | **haec** est filia **mea** | **hae** sunt filiae **meae** |
 | neuter | **hoc** est corpus **meum** | **haec mea** sunt  |
-
+  
 ## Case
-
+  
   + 7 cases
 
 Nouns, pronouns, and adjectives change their endings according to their function in the sentence.
@@ -40,11 +40,11 @@ Nouns, pronouns, and adjectives change their endings according to their function
 **Abl**ative: motion away from something. *rege* 'with the king'.
 
 **Loc**ative: location. Usually used with the name of cities and a limited number of nouns. *domi* 'at home'.
-
+  
   + In linguistics, cases other than nom. and vol. are called **obl**ique case.
-
+  
 ## Tense
-
+  
   + 6 main tenses in indicative mood, 4 in subjunctive mood, 2 in imperative mood.
 
 Participles have 3, while the infinitive has 2.
@@ -60,9 +60,10 @@ Participles have 3, while the infinitive has 2.
 **Future Perfect**: *fecero* 'I will have done'
 
 **Pluperfect**: *feceram* 'I had done'
-
+  
 ## Conjugation
-
+  
   + ### Consonant Conjugation (3)
-
+  
     + 
+ 

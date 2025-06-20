@@ -4,11 +4,11 @@ title: Crawl song lyrics in NetEase
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ## Introduction
 
 Beginning to learn Python, @Zei_Wai and I want to do some simple tasks, instead of diving into the sea of the documentation of Python. Then we chose this: generating a WordCloud picture of the lyrics of NeteaseMusic Songlist.
-
+  
 ## Using urllib package
 
 First we found an api of Netease:
@@ -90,7 +90,7 @@ print("done")
 ```
 
 But sadly the result html still remains the ${x.id} form. Maybe Netease has updated its code and the tutorial I followed are all outdated.
-
+  
 ## Using cloudmusic package
 
 [github author = "p697" project = "cloudmusic"][/github]
@@ -140,17 +140,17 @@ Cloudmusic package is good, but it hasn't been maintained for 2 years. When gett
 ```
 
 Then the program can work well, generating a file full of Chinese Lyrics:
-
+  
 ## WordCloud
 
 To be continued...
-
+  
 ## Integration
-
+  
 ### File Organization:
 
 After generating process, two files "Lyrics.txt" and "wd-picture.jpg" will appear in output directory.
-
+  
 ### Readme.md
 
 We use package:
@@ -164,7 +164,7 @@ jieba
 Before starting, please edit the musicObj.py in cloudmusic package [like this](#FixAbstractMusic).
 
 You can get the id of user from the URL of the personal page in Netease. Please ensure one has enabled "visible to everyone" settings of the Song Ranking.
-
+  
 ### start.bash
 
 Simply running the main program:
@@ -173,7 +173,7 @@ Simply running the main program:
 #!/bin/bash
 python3 "./input/NeteaseLyricsCloud.py"
 ```
-
+  
 ### Main program:
 
 ```python
@@ -229,7 +229,8 @@ with open("./output/Lyrics.txt") as fp:
 
 print("All done")
 ```
-
+  
 ## Result Output
 
 やっぱり世界（
+ 

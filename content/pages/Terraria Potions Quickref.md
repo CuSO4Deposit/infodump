@@ -5,7 +5,7 @@ date: 2023-08-28
 title: Terraria Potions Quickref
 categories:
 lastMod: 2025-03-22
----
+--- 
 ## For battle
 
 | Potion       | Fish                    | Herb                               | Other ingredients |
@@ -20,7 +20,7 @@ lastMod: 2025-03-22
 | Summoning    | **Variegated** Lardfish | Moonglow                           | -                 |
 | Thorns       | -                       | Deathweed                          | Cactus            |
 | Wrath        | **Ebon**koi             | Deathweed                          | -                 |
-
+  
 ## For battle (optional)
 
 | Use cases                 | Potion/Flask      | Fish                              | Herb                    | Other ingredients |
@@ -35,7 +35,7 @@ lastMod: 2025-03-22
 | Summoner                  | Summoning         | **Variegated** Lardfish           | Moonglow                | -                 |
 | Increase KB               | Titan             | -                                 | Deathweed + Shiverthorn | Bone              |
 | Cold battle               | Warmth            | **Frost** Minnow                  | Shiverthorn             | -                 |
-
+  
 ## Others
 
 | Potion        | Fish          | Herb                    | Other ingredients |
@@ -43,5 +43,6 @@ lastMod: 2025-03-22
 | Dangersense   | -             | Shiverthorn             | Cobweb            |
 | Obsidian Skin | -             | Fireblossom + Waterleaf | Obsidian          |
 | Wormhole      | Specular fish | Blinkroot               | -                 |
-
+  
 #Terraria
+ 

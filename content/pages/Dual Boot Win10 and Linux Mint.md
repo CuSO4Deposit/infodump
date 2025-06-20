@@ -4,15 +4,15 @@ title: Dual Boot Win10 and Linux Mint
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ## Introduction
 
 I already have Windows 10 installed on my computer, and want to install Linux to dual boot.
-
+  
 ## Preparation
 
 I don't have any experience on installing a new OS. So I have to investigate enough to minimize the probability that emergencies happen.
-
+  
 ### Distro
 
 I choose Linux Mint 20.03(Edge). This stable edition is distributed on Jan. 17, 2022. Some videos that helps to choose a distro (provided by @Erik):
@@ -20,7 +20,7 @@ I choose Linux Mint 20.03(Edge). This stable edition is distributed on Jan. 17, 
 [Linux HATES Me – Daily Driver CHALLENGE Pt.1 - YouTube](https://www.youtube.com/watch?v=0506yDSgU7M)
 
 [Linus BREAKS Linux! - Daily Driver Challenge Reaction - YouTube](https://www.youtube.com/watch?v=D8j1n05s9-w)
-
+  
 ### Creating a bootable USB Stick
 [Create the bootable media](https://linuxmint-installation-guide.readthedocs.io/en/latest/burn.html)
 [Create the bootable media](https://linuxmint-installation-guide.readthedocs.io/en/latest/burn.html#create-the-bootable-media)
@@ -45,7 +45,7 @@ Download [Etcher](https://etcher.io/), install and run it.
 
   
   16GB UDisk, after flashing
-
+  
 ### Fundamental Knowledges
 
 [Partitioning — Linux Mint Installation Guide documentation](https://linuxmint-installation-guide.readthedocs.io/en/latest/partitioning.html)
@@ -55,11 +55,11 @@ Download [Etcher](https://etcher.io/), install and run it.
 [Understanding the Linux File System :: Chapter 7: Red Hat Linux Basics :: Part II: Exploring Red Hat Linux :: Red Hat Linux 9 Professional Secrets :: Linux systems :: eTutorials.org](http://etutorials.org/Linux+systems/red+hat+linux+9+professional+secrets/Part+II+Exploring+Red+Hat+Linux/Chapter+7+Red+Hat+Linux+Basics/Understanding+the+Linux+File+System/)
 
 [A beginner’s guide to disks and disk partitions in Linux – LinuxBSDos.com](https://linuxbsdos.com/2014/11/08/a-beginners-guide-to-disks-and-disk-partitions-in-linux/)
-
+  
 ### Backup data
 
 There's not a lot of things to say here. In case of emergencies, always remember to backup your important data!
-
+  
 ## Installation
 
 A full [tutorial](https://youtu.be/IzVnTSklWa0) by LearnLinuxTV:
@@ -71,9 +71,9 @@ Actually, this process is really easy. Everything is pre-configured. I just need
 My computer only has one hard drive. I give Linux Mint 50GB space. At first I am afraid that: as it automatically re-partition the drive, the C:(the partition where my Windows system is put) of my Windows may be full, and Windows can't run. But finally it turns out that it doesn't touch the system partition, and my D: (partition that saves data, with 175GB free) reduced to 125GB free. Meaning the re-partition process takes its 50GB all frm D: .
 
 After configuring, the system tells me to restart. Then a blue screen "Perform MOK management" jumps out, which i have never seen in other tutorials. Some websites say it has something to do with graphics cards. They say I should choose "Enroll MOK" to load the graphic card's driver properly, but at this time my keyboard doesn't work. I can't gain control of anything on my computer. Then it automatically enters "continue boot". So my graphic card may be misconfigured. I will try to fix this in the future.
-
+  
 ## Configuration
-
+  
 ### A problem - packagekitd
 
 After some time (about 1 hour) I installed Linux, something went wrong. I can't access anything about packages, including installing applications, updating cache, and so on.
@@ -83,13 +83,13 @@ All the things above were stuck. Waiting for them for a long time, I came to kno
 sudo kill -9 43984
 
 where 43984 is the process id of packagekitd. After doing this, the command line still told me that the file that installation needed was still locked by "aptd". Then after a while, system jumped out a window, asking me to set a secure boot password. Then after several minutes, when I was randomly trying, I found the process was no longer locked. Then everything stuck was solved. But I still don't know whether the system heals itself after "packagekitd" was killed, or setting that password worked.
-
+  
 ### Driver Manager
 
 Some websites recommended this option.
 
 Some websites recommend the NVIDIA official driver, but **[later it gave me a lot of trouble](#Blurred-Screen)**. Next time when I install a Linux system on a computer with NVIDIA, I will directly choose "Xserver driver".
-
+  
 ### Another problem - Can't shut down
 
 Each time when i press "shut down", it just restarts the system, doesn't give me a chance to boot into Windows.
@@ -99,7 +99,7 @@ Solution[Linux Mint 无法关机（关机自动重启）问题解决](https://zh
 sudo apt-get install laptop-mode-tools
 
 Problem solved.
-
+  
 ### 3rd problem - too much buffer/cache memory
 
 The free memory is very little. My laptop has 16GB RAM, but memory are almost all buffered/cached, making the free mem less then 1GB:
@@ -107,7 +107,7 @@ The free memory is very little. My laptop has 16GB RAM, but memory are almost al
 I tried a lot, but nothing works. Then the blurred screen(mentioned later) happened, and I changed the driver of graphic cards. And now I suddenly find it is solved, even though I don't know when and how:
 
 Maybe it was because of the driver, I don't know. That is the only thing changed that I can think of.
-
+  
 ### Emergency - Blurred screen
 
 When I get almost everything done, I choose to restart the machine. Then the blue interface comes out again, and I still cannot control the keyboard. Then following this tutorial:
@@ -157,7 +157,7 @@ Here are some other possible ways to solve this problem, but I didn't try:
 [Linux / Ubuntu+win10双系统安装记录(2):AMD核显驱动引发的问题](https://zhuanlan.zhihu.com/p/397952249)
 
 [联想拯救者R7000安装Ubuntu20.04后屏幕亮度调节终极解决方案](https://zhuanlan.zhihu.com/p/348624522)
-
+  
 ### Configure VPN with valid \*.conf file using WireGuard
 
 reference:
@@ -201,3 +201,4 @@ it returns an interface, establishing connection successfully.
 If want to quit the connection, use
 
 sudo wg-quick down Depoze\_laptop
+ 

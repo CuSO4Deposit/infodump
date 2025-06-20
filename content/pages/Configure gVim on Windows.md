@@ -4,11 +4,11 @@ title: Configure gVim on Windows
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 ## Version Info
 
 gVim version 8.1.1 8.2.0577 for Windows
-
+  
 ## Initialize
 
 [无插件Vim配置文件vimrc推荐与各VIM配置项解释](https://vimjc.com/vimrc.html)
@@ -67,7 +67,7 @@ syntax on
 set foldmethod=syntax
 set nofoldenable
 ```
-
+  
 ## Install Theme: Solarized
 
 [15个著名的Vim配色方案整理-Vim入门教程(7)](https://vimjc.com/vim-color-schemes.html)
@@ -79,12 +79,12 @@ Download theme and unpack *.zip. Add Solarized.vim to /Vim/vim81/color directory
 ```vim
 colorscheme Solarized
 ```
-
+  
 ## Install Vim-plug package manager
 
 [Vim轻量高效插件管理神器vim-plug介绍-Vim插件(9)](https://vimjc.com/vim-plug.html)
 [如何安装 Vim 插件](https://zhuanlan.zhihu.com/p/108697739)
-
+  
 ### Install Vim-plug
 
 First download the plug.vim and put it into the /autoload directory. I find there's already a plug.vim. Maybe it's built-in at Vim ver. 8.1.
@@ -102,12 +102,12 @@ Restart Vim. An error indication:
 [vim-plug] `git` executable not found. Most commands
 
 It's because Win10 doesn't have a git as a built-in.[ref][win10下vim提示git executable not found怎么办](https://jingyan.baidu.com/article/08b6a59103fd2954a9092235.html)[/ref] Install Git.
-
+  
 ### Install Git[ref] [Git for Windows](https://gitforwindows.org/) [/ref]
 
 Download Git 2.33.0.2-64-bit.exe. Install.
 Restart Vim. The error indication disappears.
-
+  
 ### Use Vim-plug to install plugin
 
 Add a github link to the "call plug" mentioned. Then in any gVim window, use command mode, type :PlugInstall. The plugin will be automatically installed.
@@ -128,17 +128,17 @@ call plug#end()
 Then open any file in gVim, type :PlugInstall, the plugin is automatically installed.
 
 vim-plug window
-
+  
 ## Plugin: YouCompleteMe
 
 Installing YouCompleteMe is a very complicated and annoying process... But it's a very very powerful tool.
-
+  
 ### Install YCM Plugin
 
 [github author = "ycm-core" project = "YouCompleteMe#windows"][/github]
 
 Install it by vim-plug.
-
+  
 ### Upgrade Vim
 
 [admonition title="Note" color="orange"]You should backup your theme and _vimrc before each time you upgrade Vim. They will be deleted.[/admonition]
@@ -158,15 +158,15 @@ call plug#begin('D:\Program\ Files\ (x86)\Vim\vim81\pack')
 
 call plug#begin('D:\Program\ Files\ (x86)\Vim\vim82\pack')
 ```
-
+  
 ### Install  [Python](https://www.python.org/downloads/)
-
+  
 ### Install  [Cmake](https://cmake.org/download/)
-
+  
 ### Microsoft VS2019
 
 Already exist in the computer.
-
+  
 ### Configure YCM
 
 go to the directory D:\Program Files (x86)\Vim\vim82\pack\YouCompleteMe. Run cmd.
@@ -249,5 +249,6 @@ Some other references are listed here.
 [Vim插件YouCompleteMe安装记录（号称最难装的Vim插件？）](https://www.cnblogs.com/YMaster/p/11209813.html)
 [YouCompleteMe 安装过程记录 2021](https://www.cnblogs.com/windin/p/14954527.html)
 [Vim8安装插件YouCompleteMe踩到的](https://zhuanlan.zhihu.com/p/73429590)
-
+  
 #vim
+ 

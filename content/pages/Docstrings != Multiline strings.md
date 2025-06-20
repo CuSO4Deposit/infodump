@@ -4,13 +4,13 @@ title: Docstrings != Multiline strings
 tags:
 categories:
 lastMod: 2025-03-04
----
+--- 
 Before python 3.13, docstrings are also not trimmed by default.
-
+  
 [Common leading spaces are trimmed from a docstring since 3.13](https://docs.python.org/3/whatsnew/3.13.html#other-language-changes).
-
+  
 But multiline strings are not treated so. Leading spaces are always what-you-see-is-what-you-get.
-
+  
 ```python
 % nix run nixpkgs#python313
 Python 3.13.2 (main, Feb  4 2025, 14:51:09) [GCC 14.2.1 20241116] on linux
@@ -63,5 +63,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> a.__doc__
 '\n\tThis is a docstring.\n\t    Its indent balabala\n\t'
 ```
-
+  
 #python
+ 

@@ -4,13 +4,13 @@ title: 为小米手环配置Zepp Life的开源替代
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 Steps: [https://codeberg.org/Freeyourgadget/Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge)
-
+  
 ## 下载Gadgetbridge
 
 [Gadgetbridge | F-Droid - Free and Open Source Android App Repository](https://f-droid.org/app/nodomain.freeyourgadget.gadgetbridge)
-
+  
 ## 获取auth key
 
 Steps: [Huami Server Pairing - Gadgetbridge - Codeberg.org](https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki/Huami-Server-Pairing)
@@ -45,7 +45,7 @@ Logged out.
 ```
 
 通过设备的蓝牙地址可以确定是哪一台设备（如果只有一个设备启用中，通过active: Yes也可以），对应的“Key”即为需要的auth key。
-
+  
 ## 连接到Gadgetbridge
 
 不要解除手环和"Zepp Life"的绑定，Kill "Zepp Life"，此后在手机的蓝牙设置中就可以看到设备"Mi Smart Band 5"。
@@ -53,3 +53,4 @@ Logged out.
 使用 *Gadgetbridge* 搜索设备，长按搜索到的设备卡片，在弹出窗口填入对应的"Key"选项。然后返回设备卡片页，单击卡片进行配对和连接。
 
 首页显示了这个设备卡片，说明配对成功，可以直接卸载Zepp Life啦（不可以先解绑再卸载，因为auth key是每次绑定重新生成）。
+ 

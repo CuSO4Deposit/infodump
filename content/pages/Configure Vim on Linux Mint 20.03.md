@@ -4,15 +4,15 @@ title: Configure Vim on Linux Mint 20.03
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 This is just a simple record. About the configuring process on Windows, here is [another blog](/vim-configure-process-recording/).
-
+  
 ## Version Info
 
 Vi IMproved 8.1 (2018 May 18)
 
 Huge version with GTK3 GUI.
-
+  
 ## .vimrc
 
 [无插件Vim配置文件vimrc推荐与各VIM配置项解释](https://vimjc.com/vimrc.html)
@@ -135,9 +135,9 @@ nnoremap gk k
 nnoremap j gj
 nnoremap gj j
 ```
-
+  
 ## YouCompleteMe
-
+  
 ### Cmake
 
 $ pip install --user cmake
@@ -148,11 +148,11 @@ Downloading [https://pypi.tuna.tsinghua.edu.cn/packages/43/f7/cf42906411c364dbf6
 ████████████████████████████████ 22.7 MB 4.6 MB/s 
 Installing collected packages: cmake
 Successfully installed cmake-3.22.2
-
+  
 ### Quick start
 
 $ sudo apt install build-essential cmake vim-nox python3-dev
-
+  
 ### Error message
 
 FAILED
@@ -166,7 +166,7 @@ The installation failed; please see above for the actual error. In order to get 
 For example, run:/usr/bin/python3 /home/cuso4d/.vim/plugged/YouCompleteMe/third_party/ycmd/build.py --all --verbose
 
 Add "--verbose", it will show detailed info when building.
-
+  
 ### If you want C# support...
 
 If you chose "install all support of YCM", or you want a C# support, caution:
@@ -208,9 +208,10 @@ raise RemoteDisconnected("Remote end closed connection without"
 http.client.RemoteDisconnected: Remote end closed connection without response
 
 I don't need a C# support. If you do, maybe you can download the file manually, or modify the build.py file.
-
+  
 ### C-family support
 
 python3 install.py --clangd-completer
-
+  
 #vim
+ 

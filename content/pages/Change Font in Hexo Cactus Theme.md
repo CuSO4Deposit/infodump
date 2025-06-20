@@ -4,7 +4,7 @@ title: Change Font in Hexo Cactus Theme
 tags:
 categories:
 lastMod: 2024-11-05
----
+--- 
 Modify `themes/cactus/source/layout/_partial/header.ejs`.
 
 ```
@@ -24,7 +24,7 @@ $font-family-mono = "Menlo", "Meslo LG", "LXGW WenKai Mono", monospace
 $font-size = 14px
 ...
 ```
-
+  
 ## Deprecated
 
 **Deprecated because ttf file is too big for users to load from this source. Use a CDN is better.**
@@ -56,5 +56,6 @@ $font-size = 14px
 ```
 
 Reload website, fonts will load in left-to-right order.
-
+  
 #font #Hexo
+ 
