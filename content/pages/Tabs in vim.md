@@ -1,9 +1,12 @@
 ---
+tags:
+- Neovim
+- Nixvim
+- vim
 date: 2024-10-11
 title: Tabs in vim
-tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-06-20
 --- 
 ## Options Explanation
   
@@ -203,6 +206,4 @@ programs.nixvim = {
   };
 };
 ```
-  
-#Neovim #Nixvim #vim
  

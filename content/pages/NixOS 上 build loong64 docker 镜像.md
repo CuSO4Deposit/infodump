@@ -4,9 +4,9 @@ tags:
 - loong
 - Nix
 - NixOS
+date: 2025-06-20
 title: NixOS 上 build loong64 docker 镜像
 categories:
-date: 2025-06-20
 lastMod: 2025-06-20
 --- 
 在 x86_64 平台上使用 [docker]({{< ref "/pages/docker" >}}) buildx 尝试交叉编译 loong64 的镜像时，出现问题：

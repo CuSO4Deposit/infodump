@@ -1,9 +1,11 @@
 ---
+tags:
+- lsp
+- python
 date: 2024-10-05
 title: How to type annotate a Gzipfile in Python?
-tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-06-20
 --- 
 Pyright complains when I use the following code to process gzip files:
   
@@ -59,6 +61,4 @@ Diagnostics:
   + [Stackoverflow: Why does mypy complain about TextIOWrapper receiving GzipFile as argument 1?](https://stackoverflow.com/questions/58394410/why-does-mypy-complain-about-textiowrapper-receiving-gzipfile-as-argument-1)
   
   + [GitHub: typeshed - typing.IO and io.BaseIO type hierarchies are incompatible](https://github.com/python/typeshed/issues/6077)
-  
-#gzip #lsp #python
  

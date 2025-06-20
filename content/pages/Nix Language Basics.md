@@ -1,10 +1,11 @@
 ---
 link: https://nix.dev/tutorials/nix-language
+tags:
+- Nix
 date: 2024-06-30
 title: Nix Language Basics
-tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-06-20
 --- 
 Nix is **[Functional]([[FP]])**, **Lazy evaluated**.
   
@@ -199,6 +200,4 @@ pkgs.mkShellNoCC {
   # ...
 }
 ```
-  
-#Nix
  

@@ -2,9 +2,9 @@
 tags:
 - nodejs
 - nextjs
+date: 2025-06-20
 title: Next build stuck on "Creating an optimized production build" forever
 categories:
-date: 2025-06-20
 lastMod: 2025-06-20
 --- 
 ## Problem

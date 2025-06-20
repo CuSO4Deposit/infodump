@@ -1,9 +1,10 @@
 ---
+tags:
+- Nix
 date: 2024-07-09
 title: Basic Operations on Datatypes in Nix
-tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-06-20
 --- 
 ## Attribute sets
   
@@ -155,6 +156,4 @@ rec {
 }
 ```
 source: https://nixcloud.io/tour/?id=reimplementation/map
-  
-#Nix
  
