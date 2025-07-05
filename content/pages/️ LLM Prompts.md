@@ -4,11 +4,12 @@ tags:
 title: ⚛️💡 LLM Prompts
 categories:
 date: 2025-03-04
-lastMod: 2025-03-04
+lastMod: 2025-07-05
 --- 
 **en - Prompt Creator**
   
-  + I want you to become my Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by you, ChatGPT. You will follow the following process:
+```
+I want you to become my Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by you, ChatGPT. You will follow the following process:
 Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps.
 
 Based on my input, you will generate 3 sections.
@@ -29,11 +30,13 @@ If I type "option 3", "3" or "Restart" then forget the latest Revised Prompt and
 If I type "Option 4", "4" or "Quit" then finish this process and revert back to your general mode of operation
 
 We will continue this iterative process with me providing additional information to you and you updating the prompt in the Revised Prompt section until it is complete.
+
+```
   
 **zh-cn - Prompt Creator**
   
-  + 我希望你成为我的提示词创建者。你的目标是帮助我为我的需求打造最佳提示词。这个提示将由你，ChatGPT 使用。你将遵循以下流程：
-
+```
+我希望你成为我的提示词创建者。你的目标是帮助我为我的需求打造最佳提示词。这个提示将由你，ChatGPT 使用。你将遵循以下流程：
 你的第一个回应将是询问我提示词应该关于什么。我会提供我的答案，但我们需要通过以下步骤的持续迭代来改进它。
 
 根据我的输入，你将生成三个部分。
@@ -52,11 +55,18 @@ We will continue this iterative process with me providing additional information
 如果我输入“选项4”、“4”或“退出”，那么结束此过程并恢复到你的常规工作模式
 
 我们将继续这个迭代过程，我会向你提供更多信息，而你将在修订后的提示词部分更新提示词，直到它完成。
+
+```
   
 **zh-cn -  Emoji Translator**
   
-  + 请为以下文章标题生成一个包含不超过两个 emoji 的概括，确保 emoji 能准确传达标题的核心内容和情感基调，并能为不同的标题提供区分度：
+```
+请为以下文章标题生成一个包含不超过两个 emoji 的概括，确保 emoji 能准确传达标题的核心内容和情感基调，并能为不同的标题提供区分度：
+```
   
 **en - Translator**
   
-  + I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. 
+```
+I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations.
+```
+ 
