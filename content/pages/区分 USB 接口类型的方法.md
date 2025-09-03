@@ -3,7 +3,7 @@ date: 2024-08-19
 title: 区分 USB 接口类型的方法
 tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-07-06
 --- 
 ## Env / Dependency
   

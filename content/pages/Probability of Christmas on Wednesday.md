@@ -3,7 +3,7 @@ date: 2021-10-14
 title: Probability of Christmas on Wednesday
 tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-07-06
 --- 
 ## Original Problem
 

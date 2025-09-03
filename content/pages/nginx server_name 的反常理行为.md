@@ -1,9 +1,10 @@
 ---
 date: 2024-08-24
-title: nginx server_name 的反常理行为
 tags:
+- nginx
+title: nginx server_name 的反常理行为
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-07-06
 --- 
 ## TL;DR
 
@@ -47,6 +48,4 @@ server {
     return 404;
 }
 ```
-  
-#nginx
  

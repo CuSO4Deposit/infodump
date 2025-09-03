@@ -4,7 +4,7 @@ tags:
 date: 2023-09-08
 title: Terraria Herb Farm Reminder
 categories:
-lastMod: 2025-03-22
+lastMod: 2025-07-06
 --- 
 Announcement box text:
   

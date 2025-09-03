@@ -5,5 +5,5 @@ date: 2024-06-30
 title: Functional Programming
 tags:
 categories:
-lastMod: 2024-11-05
+lastMod: 2025-07-06
 ---
