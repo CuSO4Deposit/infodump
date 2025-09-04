@@ -3,7 +3,7 @@ date: 2025-02-25
 title: Markdown - Syntaxes that I don't Know
 tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-06-02
 --- 
 # Syntaxes
   

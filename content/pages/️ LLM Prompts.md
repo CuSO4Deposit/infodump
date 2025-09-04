@@ -3,8 +3,8 @@ tags:
 - persistent-page
 title: ⚛️💡 LLM Prompts
 categories:
-date: 2025-07-06
-lastMod: 2025-07-06
+date: 2025-06-02
+lastMod: 2025-06-02
 --- 
 **en - Prompt Creator**
   

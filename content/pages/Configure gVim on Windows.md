@@ -3,7 +3,7 @@ date: 2021-10-02
 title: Configure gVim on Windows
 tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-06-02
 --- 
 ## Version Info
 

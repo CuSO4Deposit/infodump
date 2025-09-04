@@ -4,7 +4,7 @@ tags:
 date: 2024-07-09
 title: Basic Operations on Datatypes in Nix
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-06-02
 --- 
 ## Attribute sets
   
