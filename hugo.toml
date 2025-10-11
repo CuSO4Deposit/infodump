@@ -19,3 +19,7 @@ author = "CuSO4_Deposit"
     name = "Pages"
     url = "/pages/"
     weight = 2
+  [[menu.main]]
+    name = "Friends"
+    url = "/friends/"
+    weight = 3
