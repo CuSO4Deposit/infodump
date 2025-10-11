@@ -3,7 +3,7 @@ date: 2024-06-30
 title: Nix
 tags:
 categories:
-lastMod: 2025-06-02
+lastMod: 2025-07-08
 --- 
 ## References
   

@@ -4,7 +4,7 @@ tags:
 - nginx
 title: nginx server_name 的反常理行为
 categories:
-lastMod: 2025-06-02
+lastMod: 2025-07-06
 --- 
 ## TL;DR
 

@@ -3,13 +3,13 @@ date: 2021-12-08
 title: What do these mojibake mean? - UTF-8 Encoding Scheme Exploration
 tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-11
 --- 
 This article may contain horrific and gory videos. Be careful when clicking on the URLs. If you have any discomfort when browsing, please stop and leave. / 本文可能含有恐怖、血腥性质的图片、视频。请谨慎进入文中的链接。如果您在浏览过程中产生任何不适，请停止浏览并离开。
   
 ## Introduction
 
-We often meet mojibake, in games, web pages, or somewhere else. UTF-8 is the most widespread encoding scheme. These days my friends @叉叉 and @北嘲 find some weird videos on YouTube, with obscure titles and terrifying cover. We are curious about the origin of these creepy videos. This article is to record our exploration process.
+We often meet mojibake, in games, web pages, or somewhere else. UTF-8 is the most widespread encoding scheme. These days @叉叉 and @北嘲 find some weird videos on YouTube, with obscure titles and terrifying cover. We are curious about the origin of these creepy videos. This article is to record our exploration process.
 
 Some Example Videos
 
@@ -133,7 +133,7 @@ As mentioned in the code comment, when debugging, I use a manual loop counter. B
 . آمراة تدعى أنها السيدة مريم
 
 This is when the loopcounter is set to 50. But when I reset to 100, it will becomes garbled again. But 101 was OK. Then I printed it out byte by byte:
-
+```
 ., 0x2e
 , 0x20
 ? 0xffffffd8
@@ -234,7 +234,7 @@ This is when the loopcounter is set to 50. But when I reset to 100, it will beco
 ? 0xffffffd8
 ? 0xffffffa7
 ? 0xffffffd9
-
+```
 It's clear that the single-byte character 0x20 interrupted the decoding process, maybe made a double-byte character separated then caused the garmbled. So I should learn how UTF-8 is encoded.
 
 **UTF-8** is a **variable-width** character encoding used for electronic communication. Defined by the Unicode Standard, the name is derived from *Unicode* (or *Universal Coded Character Set*) *Transformation Format – 8-bit*. While Unicode is a character set.
@@ -243,7 +243,7 @@ It's clear that the single-byte character 0x20 interrupted the decoding process,
 First code point
 
 Last code point
-
+```
 Byte 1
 
 Byte 2
@@ -287,7 +287,7 @@ U+10000
 10xxxxxx
 
 10xxxxxx
-
+```
 Unicode <-> UTF-8
 
 Example:
@@ -315,7 +315,7 @@ switch(temp){
 ```
 
 When loopcounter is set to 100 or 101, these are what they ouput:
-
+```
 100:
 00101110
 00100000
@@ -520,7 +520,7 @@ When loopcounter is set to 100 or 101, these are what they ouput:
 10100111
 11011001
 10000100
-
+```
 It's clear that loopcounter {{< logseq/mark >}} 100 split the last double-byte character. ("11011001 10000100" -> "11011001"), and loopcounter {{< / logseq/mark >}} 101 solves this problem. But this will only cause the last character's decoding error, why does the entire sentence falls into garbled words? The lower right corner of the Notepad draws my attention:
   
 

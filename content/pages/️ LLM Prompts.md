@@ -3,8 +3,8 @@ tags:
 - persistent-page
 title: ⚛️💡 LLM Prompts
 categories:
-date: 2025-06-02
-lastMod: 2025-06-02
+date: 2025-07-06
+lastMod: 2025-07-06
 --- 
 **en - Prompt Creator**
   
@@ -68,5 +68,17 @@ We will continue this iterative process with me providing additional information
   
 ```
 I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations.
+```
+  
+zh-cn - summary
+  
+```
+请为我提供的文本生成一个简洁、准确的摘要，长度为一两句话。这个摘要应该能够让文章的读者快速了解文章所讲的内容和深度。
+```
+  
+zh-cn - desensitization
+  
+```
+请对以下文本进行脱敏处理。移除所有文件路径和用户名，并使用英文占位符（例如 [directory] 和 [username]）进行替换。确保命令本身、任何命令输出以及文本中的其他潜在敏感信息都得到妥善处理，使其无法识别原始路径和用户名。
 ```
  

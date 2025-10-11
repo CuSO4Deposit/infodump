@@ -122,3 +122,6 @@ bin_cd(char *nam, char **argv, Options ops, int func)
   + `cd_get_dest()` 根据调用的命令的不同（`cd`, `pushd`, `popd`），算出来目标目录，如果目标目录无或者不能访问（在参数 `-s` 时可能发生）就返回非零。
   
   + `cd_new_pwd()` 跳到算出来应该跳到的目录。
+  
+
+ 

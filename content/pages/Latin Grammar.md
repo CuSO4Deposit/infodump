@@ -2,8 +2,8 @@
 title: Latin Grammar
 tags:
 categories:
-date: 2025-06-02
-lastMod: 2025-06-02
+date: 2025-07-06
+lastMod: 2025-07-06
 --- 
 ## Word Order
   
