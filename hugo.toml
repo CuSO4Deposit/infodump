@@ -10,3 +10,12 @@ author = "CuSO4_Deposit"
     [markup.goldmark.renderer]
       unsafe = true
 
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Pages"
+    url = "/pages/"
+    weight = 2
