@@ -1,9 +1,9 @@
 ---
+date: 2025-03-04
 tags:
 - persistent-page
 title: ⚛️💡 LLM Prompts
 categories:
-date: 2025-10-12
 lastMod: 2025-10-12
 --- 
 **en - Prompt Creator**
