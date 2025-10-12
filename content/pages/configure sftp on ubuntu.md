@@ -8,7 +8,7 @@ lastMod: 2025-10-12
 --- 
 Assume SSH is already set up, sftp is easy to configure. It uses the same port as SSH.
 
-Modify `/etc/ssh/sshd_config`, comment this line:
+Modify `/etc/ssh/sshd_config`, uncomment this line:
 
 ```
 Subsystem      sftp    /usr/lib/openssh/sftp-server
