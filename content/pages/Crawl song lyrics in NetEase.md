@@ -3,7 +3,7 @@ date: 2022-02-08
 title: Crawl song lyrics in NetEase
 tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 ## Introduction
 

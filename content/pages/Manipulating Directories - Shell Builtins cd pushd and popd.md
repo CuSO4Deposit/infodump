@@ -4,7 +4,7 @@ tags:
 date: 2025-09-04
 title: Manipulating Directories - Shell Builtins cd pushd and popd
 categories:
-lastMod: 2025-09-04
+lastMod: 2025-10-12
 --- 
 大多数现代 shell 有一系列 shell builtins（例：[zsh](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html) ），其中一些可以用来操作目录。
   
