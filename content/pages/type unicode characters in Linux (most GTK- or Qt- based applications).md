@@ -3,10 +3,10 @@ tags:
 - Linux
 - Unicode
 date: 2025-09-26
-description: This article explains how to type any unicode characters in GTK- or Qt- based applications conveniently. TL;DR try Ctrl + Shift + U
+summary: This article explains how to type any unicode characters in GTK- or Qt- based applications conveniently. TL;DR try Ctrl + Shift + U
 title: type unicode characters in Linux (most GTK- or Qt- based applications)
 categories:
-lastMod: 2025-10-11
+lastMod: 2025-10-12
 --- 
 ## Steps [^1]
   

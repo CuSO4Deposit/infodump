@@ -28,9 +28,11 @@
               hugo
               lolcat
               (writeShellScriptBin "mu" ''mv $PUBLICEXPORT_SOURCE/publicExport.zip .; unzip -o -q publicExport.zip; rm publicExport.zip'')
+              (writeShellScriptBin "hs" "hugo server")
             ];
             shellHook = ''
               echo "use mu to extract \$PUBLICEXPORT_SOURCE/publicExport.zip here and remove source." | lolcat
+              echo "use hs to start hugo server." | lolcat
             '';
           };
         };

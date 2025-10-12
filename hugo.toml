@@ -23,3 +23,7 @@ author = "CuSO4_Deposit"
     name = "Friends"
     url = "/friends/"
     weight = 3
+  [[menu.main]]
+    name = "RSS Feed"
+    url = '/index.xml'
+    weight = 4
