@@ -7,9 +7,9 @@ tags:
 date: 2025-06-20
 title: NixOS 上 build loong64 docker 镜像
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
-在 x86_64 平台上使用 [docker]({{< ref "/pages/docker" >}}) buildx 尝试交叉编译 loong64 的镜像时，出现问题：
+在 x86_64 平台上使用 docker buildx 尝试交叉编译 loong64 的镜像时，出现问题：
   
 ```
 1 warning found (use docker --debug to expand):
@@ -43,7 +43,7 @@ Labels:
 ...
 ```
   
-可以看到 Platforms 里是没有 loong64 的。因此 build 会失败。对这个问题的解决方案，是 docker 将会跑一个 [[qemu]] 虚拟机来运行对应平台上的 build。这个 qemu 通常的注入的方式是跑一个容器。龙芯的在这里：
+可以看到 Platforms 里是没有 loong64 的。因此 build 会失败。对这个问题的解决方案，是 docker 将会跑一个 qemu 虚拟机来运行对应平台上的 build。这个 qemu 通常的注入的方式是跑一个容器。龙芯的在这里：
   
 ```shell-session
 # docker run --rm --privileged loongcr.lcpu.dev/multiarch/archlinux --reset -p yes # loong64

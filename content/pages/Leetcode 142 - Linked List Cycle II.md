@@ -1,9 +1,13 @@
 ---
+tags:
+- LeetCode
+- linklist
+- pointer
+- 快慢指针
 date: 2023-04-26
 title: Leetcode 142 - Linked List Cycle II
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 ## Problem
 
@@ -118,6 +122,4 @@ struct ListNode *detectCycle(struct ListNode *head) {
   return p;
 }
 ```
-  
-#LeetCode #pointer #快慢指针
  

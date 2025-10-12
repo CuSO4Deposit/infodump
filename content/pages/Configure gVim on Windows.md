@@ -1,9 +1,10 @@
 ---
+tags:
+- vim
 date: 2021-10-02
 title: Configure gVim on Windows
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 ## Version Info
 
@@ -249,6 +250,4 @@ Some other references are listed here.
 [Vim插件YouCompleteMe安装记录（号称最难装的Vim插件？）](https://www.cnblogs.com/YMaster/p/11209813.html)
 [YouCompleteMe 安装过程记录 2021](https://www.cnblogs.com/windin/p/14954527.html)
 [Vim8安装插件YouCompleteMe踩到的](https://zhuanlan.zhihu.com/p/73429590)
-  
-#vim
  

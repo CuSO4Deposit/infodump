@@ -1,9 +1,11 @@
 ---
+tags:
+- quickref
+- vim
 date: 2021-10-04
 title: Vim commands quickref
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 ## Move cursor
 
@@ -91,6 +93,4 @@ yw: copy a word.
 ## Set
 
 :set <command>: set some options. e.g. :set ic means (ignore case), works when find and replace.
-  
-#Quickref #vim
  

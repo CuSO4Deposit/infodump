@@ -1,9 +1,12 @@
 ---
+tags:
+- Element
+- Matrix
+- Maunium
 date: 2024-05-05
 title: Configure Maunium Stickerpicker for Element
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 [GitHub - maunium/stickerpicker: A fast and simple Matrix sticker picker widget](https://github.com/maunium/stickerpicker)
   
@@ -99,6 +102,4 @@ Send event. Enjoy!
 ```
 
 其中把 `url` 栏换成托管表情的服务器（如 `<username>.github.io/stickerpicker/web/`）。
-  
-#Element #Matrix #Maunium
  

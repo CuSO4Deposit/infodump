@@ -1,9 +1,11 @@
 ---
+tags:
+- font
+- Hexo
 date: 2023-04-06
 title: Change Font in Hexo Cactus Theme
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 Modify `themes/cactus/source/layout/_partial/header.ejs`.
 
@@ -56,6 +58,4 @@ $font-size = 14px
 ```
 
 Reload website, fonts will load in left-to-right order.
-  
-#font #Hexo
  

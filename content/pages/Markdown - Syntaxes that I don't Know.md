@@ -1,9 +1,10 @@
 ---
+tags:
+- Markdown
 date: 2025-02-25
 title: Markdown - Syntaxes that I don't Know
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 # Syntaxes
   
@@ -148,6 +149,4 @@ Here is an inline note.^[Inline notes are easier to write, since
 you don't have to pick an identifier and move down to type the
 note.]
 ```
-  
-#Markdown
  

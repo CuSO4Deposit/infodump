@@ -1,9 +1,11 @@
 ---
+tags:
+- mathematica
+- NumberTheory
 date: 2021-10-14
 title: Probability of Christmas on Wednesday
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 ## Original Problem
 
@@ -163,6 +165,4 @@ result:
 ```
 {{Monday, 56}, {Tuesday, 58}, {Wednesday, 57}, {Thursday, 57}, {Saturday, 56}, {Sunday, 58}, {Friday, 58}}
 ```
-  
-#mathematica #NumberTheory
  

@@ -1,9 +1,11 @@
 ---
+tags:
+- Matrix
+- Maunium
 date: 2023-05-18
 title: Configure Maubot
-tags:
 categories:
-lastMod: 2025-07-06
+lastMod: 2025-10-12
 --- 
 [Maubot](https://github.com/maubot/maubot) 是一款基于插件的Matrix-Bot SDK。
 
@@ -127,6 +129,4 @@ $ mbc auth --update-client
 在GUI先创建client，再指定插件和client运行instance。创建client时，display_name和avatar字段都可以设为`disable`表示不覆盖，**如果留空则会使用空值覆盖原有的**。
 
 创建过client后，应当用已经登录的设备对maubot对应的session作验证。这样才能确保它可以解密端对端加密的消息。
-  
-#Matrix #Maunium
  
