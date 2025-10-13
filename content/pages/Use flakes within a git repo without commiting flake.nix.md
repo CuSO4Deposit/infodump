@@ -6,7 +6,7 @@ date: 2025-09-12
 sunmary: This article demonstrates how to use `direnv` and Flakes to start a development environment without committing `flake.nix` to the repository, which is useful for teams not using Nix.
 title: Use flakes within a git repo without commiting flake.nix
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-13
 --- 
 Doing the following allows you to use flakes to start a development environment without commit the `flake.nix` to the repo, for cases when your team does not use nix. [^1]
   
@@ -31,7 +31,7 @@ $ gs
 [1:user@hostname:~/project-name on main]
 $ cat .envrc
 use flake ~/flake-project
-watch_file ~/flake-project.flake.nix
+watch_file ~/flake-project/flake.nix
 [1:user@hostname:~/project-name on main]
 $ nvim ./.git/info/exclude
 [1:user@hostname:~/project-name on main]
