@@ -1,6 +1,7 @@
 baseURL = 'https://blog.depoze.xyz/'
 languageCode = 'en-us'
 theme = "logseq-hugo-bearblog"
+enableRobotsTXT = true
 
 title = "CuSO4_Deposit's Electrolytic Infodump"
 author = "CuSO4_Deposit"
