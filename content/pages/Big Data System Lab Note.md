@@ -5,7 +5,7 @@ tags:
 date: 2023-10-09
 title: Big Data System Lab Note
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ### Set up Hadoop environment
 

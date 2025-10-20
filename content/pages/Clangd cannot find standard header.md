@@ -5,7 +5,7 @@ tags:
 date: 2024-01-15
 title: Clangd cannot find standard header
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 When using clangd (16.0.2) as LSP, it throws the following error:
 

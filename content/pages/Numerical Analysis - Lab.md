@@ -5,7 +5,7 @@ tags:
 date: 2022-03-28
 title: Numerical Analysis - Lab
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Index
 

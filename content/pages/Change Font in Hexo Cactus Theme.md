@@ -5,7 +5,7 @@ tags:
 date: 2023-04-06
 title: Change Font in Hexo Cactus Theme
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 Modify `themes/cactus/source/layout/_partial/header.ejs`.
 

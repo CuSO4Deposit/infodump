@@ -5,7 +5,7 @@ tags:
 date: 2024-06-30
 title: Nix Language Basics
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 Nix is **[Functional]([[FP]])**, **Lazy evaluated**.
   

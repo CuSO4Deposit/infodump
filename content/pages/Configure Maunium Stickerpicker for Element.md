@@ -6,7 +6,7 @@ tags:
 date: 2024-05-05
 title: Configure Maunium Stickerpicker for Element
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 [GitHub - maunium/stickerpicker: A fast and simple Matrix sticker picker widget](https://github.com/maunium/stickerpicker)
   

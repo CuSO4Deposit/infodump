@@ -5,7 +5,7 @@ tags:
 date: 2022-01-22
 title: Dual Boot Win10 and Linux Mint
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Introduction
 

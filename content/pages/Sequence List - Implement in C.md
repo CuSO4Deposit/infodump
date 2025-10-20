@@ -6,7 +6,7 @@ tags:
 date: 2021-09-18
 title: Sequence List - Implement in C
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Introduction
 

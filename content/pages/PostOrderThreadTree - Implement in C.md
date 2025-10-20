@@ -6,7 +6,7 @@ tags:
 date: 2021-11-04
 title: PostOrderThreadTree - Implement in C
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ```cpp
 /*

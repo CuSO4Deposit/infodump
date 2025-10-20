@@ -5,7 +5,7 @@ tags:
 date: 2022-05-05
 title: Neat examples of mathematica
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Generate an iterated logistic map
 

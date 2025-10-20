@@ -5,7 +5,7 @@ tags:
 date: 2023-05-18
 title: Configure Maubot
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 [Maubot](https://github.com/maubot/maubot) 是一款基于插件的Matrix-Bot SDK。
 

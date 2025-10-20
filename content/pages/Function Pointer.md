@@ -5,7 +5,7 @@ tags:
 date: 2021-09-20
 title: Function Pointer
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Definition
 

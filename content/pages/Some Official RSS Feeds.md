@@ -1,11 +1,11 @@
 ---
 tags:
-- rss
+- RSS
 date: 2025-10-13
 summary: Some services provide their official RSS feeds so you don't have to use services like RSSHub. This page lists some.
 title: Some Official RSS Feeds
 categories:
-lastMod: 2025-10-13
+lastMod: 2025-10-18
 --- 
 ## GitHub
   

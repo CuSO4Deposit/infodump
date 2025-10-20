@@ -6,7 +6,7 @@ date: 2025-09-09
 summary: Zustand 是一个 React 中的 state 管理工具，本文记录了 Zustand 的一些非常初等的用法以供理解和备忘。
 title: Zustand 笔记
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 Zustand 是一个 [[React]] 中的 state 管理工具。[~~它的官网真好看~~](https://zustand-demo.pmnd.rs/)
   

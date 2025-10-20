@@ -4,7 +4,7 @@ tags:
 date: 2023-07-16
 title: install and configure zsh
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Install
 

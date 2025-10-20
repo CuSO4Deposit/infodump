@@ -6,7 +6,7 @@ tags:
 date: 2023-07-17
 title: install lunarvim on ubuntu
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Install prerequisites
   
@@ -128,5 +128,5 @@ then run:
 > source .zshrc
 ```
 
-Now calling `lvim` will invoke LunarVim. 
+Now calling `lvim` will invoke LunarVim.
  

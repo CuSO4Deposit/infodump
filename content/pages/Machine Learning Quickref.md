@@ -3,7 +3,7 @@ date: 2023-03-27
 title: Machine Learning Quickref
 tags:
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 # Matplotlib
 

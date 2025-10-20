@@ -7,7 +7,7 @@ tags:
 date: 2025-06-20
 title: NixOS 上 build loong64 docker 镜像
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 在 x86_64 平台上使用 docker buildx 尝试交叉编译 loong64 的镜像时，出现问题：
   

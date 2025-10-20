@@ -5,7 +5,7 @@ tags:
 date: 2025-08-30
 title: 找出所有依赖于特定 nix 包的其他包 - 记录 Qt5 被 deprecate 的修复
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 TL;DR 使用以下命令可以找到所有依赖于特定包的其他 nix 包。
 

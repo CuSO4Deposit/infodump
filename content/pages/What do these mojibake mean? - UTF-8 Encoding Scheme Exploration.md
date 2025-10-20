@@ -4,7 +4,7 @@ tags:
 date: 2021-12-08
 title: What do these mojibake mean? - UTF-8 Encoding Scheme Exploration
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 This article may contain horrific and gory videos. Be careful when clicking on the URLs. If you have any discomfort when browsing, please stop and leave. / 本文可能含有恐怖、血腥性质的图片、视频。请谨慎进入文中的链接。如果您在浏览过程中产生任何不适，请停止浏览并离开。
   

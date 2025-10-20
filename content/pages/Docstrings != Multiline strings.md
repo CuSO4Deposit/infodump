@@ -4,7 +4,7 @@ tags:
 date: 2025-02-28
 title: Docstrings != Multiline strings
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 Before python 3.13, docstrings are also not trimmed by default.
   

@@ -6,7 +6,7 @@ tags:
 date: 2024-10-11
 title: Tabs in vim
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## Options Explanation
   

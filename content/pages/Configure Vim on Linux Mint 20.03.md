@@ -5,7 +5,7 @@ tags:
 date: 2022-02-12
 title: Configure Vim on Linux Mint 20.03
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 This is just a simple record. About the configuring process on Windows, here is [another blog](/vim-configure-process-recording/).
   

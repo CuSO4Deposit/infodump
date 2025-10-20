@@ -4,7 +4,7 @@ tags:
 date: 2023-07-17
 title: configure sftp on ubuntu
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 Assume SSH is already set up, sftp is easy to configure. It uses the same port as SSH.
 

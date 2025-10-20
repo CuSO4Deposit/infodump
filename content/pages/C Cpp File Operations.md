@@ -4,7 +4,7 @@ tags:
 date: 2021-10-05
 title: C Cpp File Operations
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 ## C File Operation
 

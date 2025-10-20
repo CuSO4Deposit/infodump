@@ -4,7 +4,7 @@ tags:
 date: 2023-08-09
 title: nginx password protection
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 [How to password protect a directory with Nginx authentication - nixCraft](https://www.cyberciti.biz/faq/nginx-password-protect-directory-with-nginx-htpasswd-authentication/)
 

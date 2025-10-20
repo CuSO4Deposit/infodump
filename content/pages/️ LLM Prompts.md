@@ -4,7 +4,7 @@ tags:
 - persistent-page
 title: ⚛️💡 LLM Prompts
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 **en - Prompt Creator**
   

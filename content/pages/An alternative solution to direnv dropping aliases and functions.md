@@ -6,7 +6,7 @@ date: 2025-10-12
 summary: Direnv's inability to export shell-specific aliases and functions, due to its shell-agnostic design, can be addressed in Nix by using pkgs.writeScriptBin to create executable scripts instead.
 title: An alternative solution to direnv dropping aliases and functions
 categories:
-lastMod: 2025-10-12
+lastMod: 2025-10-18
 --- 
 Direnv does not support exporting aliases and functions in to the shell, because its works by running through a bash shell and extracting all environment variables from that. It just ignores the aliases and functions. [^1] [^2] This causes aliases defined in `pkgs.mkShell.shellHook` not usable in the development shell.
   
